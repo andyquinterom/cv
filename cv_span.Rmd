@@ -1,0 +1,84 @@
+---
+name: "Andrés F. Quintero"
+position: "Desarrollador de software"
+phone: +57 301 435 700
+email: "afquinteromoreano@gmail.com"
+github: andyquinterom
+linkedin: andresquinterom
+profilepic: "perfil.jpeg"
+date: "`r format(Sys.time(), '%m %Y')`"
+aboutme: "Soy un desarrollador de software de Cali, Colombia apasionado por la tecnología y las matemáticas. Me encanta ser orador y transmitir nuevas ideas a la comunidad."
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Sobre mi
+
+-   Desarrollador de aplicaciones y librerías en múltiples lenguajes de programación.
+-   Experto en R Shiny.
+-   Usuario avanzado en sistemas GNU/Linux.
+-   Experto en análisis de datos para la contratación en salud.
+
+# Lenguages de programación
+
+-  R (+ Shiny)
+-  JavaScript
+-  Java
+-  SQL
+-  Bash/Sh
+
+# Tecnologías
+
+-  GNU/Linux (Debian/ Arch/ RedHat)
+-  PostgreSQL
+-  NGINX
+-  NodeJS
+-  Amazon Web Services
+-  Microsoft Azure
+-  Vim
+
+# Proyectos y contribuciones
+
+```{r}
+library(tibble)
+tribble(
+  ~ Nombre, ~ Year, ~ Enlace,
+  "Analítica Integrada Salud", "2019-2021", "https://github.com/proyais/aisalud",
+  "ComBD", "2019-2021", "https://github.com/proyais/aisalud_combd",
+  "shinyCache", "2021", "https://github.com/proyais/shinyCache",
+  "DBPlyr", "2021", "https://github.com/tidyverse/dbplyr",
+  "RSConnect", "2021", "https://github.com/rstudio/rsconnect"
+) %>% 
+  detailed_entries(Nombre, Year, Enlace)
+```
+
+# Experiencia laboral
+
+```{r}
+library(tibble)
+tribble(
+  ~ what, ~ when, ~with,
+  "Desarrollo de software y consultoría", "2019-2021", "MD&CO Consulting Group",
+  "Desarrollo de Software", "2020", "p4s Hackathon Covid-19"
+) %>% 
+  detailed_entries(what = what, when = when, with = with)
+```
+
+# Educación
+
+```{r}
+library(tibble)
+tribble(
+  ~when, ~with, ~why, 
+  "2006-2020", "Colegio Bolivar (Cali)", list("Excelencia académica.",
+                                              "Premio a mejor proyecto de grado.",
+                                              "Sociedad de honor"),
+  "2020", "Universidad de Chicago", "Micro-economía",
+  "2018", "Universidad Yale", "Finanzas y emprendimiento"
+) %>% 
+  detailed_entries(when = when, with = with, why = why)
+```

@@ -1,13 +1,13 @@
 ---
 name: "Andrés F. Quintero"
-position: "Desarrollador de software"
+position: "Software Developer"
 phone: +57 301 435 700
 email: "afquinteromoreano@gmail.com"
 github: andyquinterom
 linkedin: andresquinterom
 profilepic: "perfil.jpeg"
 date: "`r format(Sys.time(), '%m %Y')`"
-aboutme: "Soy un desarrollador de software de Cali, Colombia apasionado por la tecnología y las matemáticas. Me encanta ser orador y transmitir nuevas ideas a la comunidad."
+aboutme: "I a software developer from Colombia and an R enthusiast. I love building tools and sharing them with the community."
 output: vitae::twentyseconds
 ---
 
@@ -16,14 +16,15 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# Sobre mi
+# About Me
 
--   Desarrollador de aplicaciones y librerías en múltiples lenguajes de programación.
--   Experto en R Shiny.
--   Usuario avanzado en sistemas GNU/Linux.
--   Experto en análisis de datos para la contratación en salud.
+-   App and library developer.
+-   R Shiny expert.
+-   Advanced GNU/Linux user.
+-   Expert in Healthcare Contracting in Colombia.
+-   Native spanish speaker
 
-# Lenguages de programación
+# Programming Languages
 
 -  R (+ Shiny)
 -  JavaScript
@@ -31,7 +32,7 @@ library(vitae)
 -  SQL
 -  Bash/Sh
 
-# Tecnologías
+# Technologies
 
 -  GNU/Linux (Debian/ Arch/ RedHat)
 -  PostgreSQL
@@ -40,8 +41,9 @@ library(vitae)
 -  Amazon Web Services
 -  Microsoft Azure
 -  Vim
+-  Docker
 
-# Proyectos y contribuciones
+# Projects and contributions
 
 ```{r}
 library(tibble)
@@ -57,29 +59,28 @@ tribble(
   detailed_entries(Nombre, Year, Enlace)
 ```
 
-# Experiencia laboral
+# Experience
 
 ```{r}
 library(tibble)
 tribble(
   ~ what, ~ when, ~with,
-  "Desarrollo de software y consultoría", "2019-2021", "MD&CO Consulting Group",
-  "Desarrollo de Software", "2020", "p4s Hackathon Covid-19"
+  "Developer and Consultant", "2019-2021", "MD&CO Consulting Group",
+  "Developer", "2020", "p4s Hackathon Covid-19"
 ) %>% 
   detailed_entries(what = what, when = when, with = with)
 ```
 
-# Educación
+# Education
 
 ```{r}
 library(tibble)
 tribble(
   ~when, ~with, ~why, 
-  "2006-2020", "Colegio Bolivar (Cali)", list("Excelencia académica.",
-                                              "Premio a mejor proyecto de grado.",
-                                              "Sociedad de honor"),
-  "2020", "Universidad de Chicago", "Micro-economía",
-  "2018", "Universidad Yale", "Finanzas y emprendimiento"
+  "2006-2020", "Colegio Bolivar (Cali)", list("Academic excellence",
+                                              "Best Senior Project",
+                                              "Honor society"),
+  "2020", "University of Chicago", "Micro-economics"
 ) %>% 
   detailed_entries(when = when, with = with, why = why)
 ```

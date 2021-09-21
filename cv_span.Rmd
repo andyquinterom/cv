@@ -48,6 +48,7 @@ library(tibble)
 tribble(
   ~ Nombre, ~ Year, ~ Enlace,
   "Analítica Integrada Salud", "2019-2021", "https://github.com/proyais/aisalud",
+  "YouTube Channel", "2020-2021", "https://bit.ly/39th3op",
   "ComBD", "2019-2021", "https://github.com/proyais/aisalud_combd",
   "shinyCache", "2021", "https://github.com/proyais/shinyCache",
   "DBPlyr", "2021", "https://github.com/tidyverse/dbplyr",
